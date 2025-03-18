@@ -66,6 +66,7 @@ describe("To-Do List", () => {
         window.addTask();
         let deleteButton = taskList.children[0].querySelector(".delete");
         deleteButton.click();
+        
         expect(taskList.children.length).toBe(0);
     });
 });
